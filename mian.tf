@@ -9,9 +9,9 @@ resource "aws_subnet" "subnet" {
     map_public_ip_on_launch = true
 }
 
-resource "aws_instance" "ec2" {
-    ami = var.instance_ami
-    instance_type = var.instance_type
-    subnet_id = aws_subnet.subnet.id
-    associate_public_ip_address = true
-}
+# resource "aws_instance" "ec2" {
+#     ami = var.instance_ami
+#     instance_type = var.instance_type
+#     subnet_id = aws_subnet.subnet.id
+#     associate_public_ip_address = true
+# }
